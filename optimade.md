@@ -98,9 +98,9 @@ interpreted as described in [RFC 2119](http://tools.ietf.org/html/rfc2119).
 * **Field**: A property that can be requested as partial output from the API.
 * **Resource object**: Represent resources. MUST contain at least the following top-level fields:
   `id`, `type`.
-* **ID**: A unique identifier that specifies a specific resource in a database,
-  which does not need to be immutable. It MUST NOT be a reserved
-  word.
+* **ID**: A unique identifier which together with entry type specifies a
+  specific resource in a database. The resource does not need to be immutable.
+  ID MUST NOT be a reserved word.
 * **Immutable ID**: A unique identifier that specifies a specific resource in a
   database that MUST be immutable.
 * **Reserved words**: The list of reserved words in this standard is:
