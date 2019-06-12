@@ -243,6 +243,8 @@ Every response MUST contain the following fields:
   * **warnings**: a list of warning resource objects representing non-critical errors or warnings.  
     A warning resource object is defined similarly to a [JSON API error object](http://jsonapi.org/format/#error-objects), but MUST also include the field `type`, which MUST have the value `"warning"`.
     The field `detail` MUST be present and SHOULD contain a non-critical message, e.g., reporting unrecognised search attributes or deprecated features.
+    The field `status`, representing a HTTP response status code, MUST NOT be present for a warning resource object.
+    This is an exclusive field for error resource objects.
 
     Example:  
     For a deprecation warning
