@@ -240,6 +240,8 @@ Every response MUST contain the following fields:
     available in the database.
   * **last\_id**: a string containing the last ID returned.
   * **response\_message**: response string from the server.
+  * **warnings**: a list of strings with non-critical messages, for example,
+    reporting unrecognised search attributes or deprecated features.
   * Other OPTIONAL additional information _global to the query_ that is not specified
   in this document, MUST start with a database-provider-specific prefix as defined in
   [Appendix 1](#h.app1).
